@@ -1,0 +1,116 @@
+.start-section
+  // background-image: url('../images/about-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #0F45FF
+
+  &__container
+    position relative
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      padding 60px 0 60px 0
+    +above($breakpoints.md)
+      padding 80px 0 80px 0
+    +above($breakpoints.xxl)
+      padding 120px 0 121px 0
+
+  &__title,
+  &__sub-title
+    text-align: center
+
+  &__sub-title
+    padding 20px 0
+    +above($breakpoints.sm)
+      padding 30px 0
+    +above($breakpoints.md)
+      padding 35px 0
+    +above($breakpoints.xxl)
+      padding 40px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+    +above($breakpoints.xxl)
+      gap: 40px
+
+  &__card
+    width 260px !important
+    border-radius: 10px
+    background-color #fff
+    height: 90px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    padding 15px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+      align-items: flex-start
+      border-radius: 15px
+      width 174px !important
+      height: 115px
+      padding 15px 5px 15px 15px
+    +above($breakpoints.md)
+      gap: 15px
+      border-radius: 20px
+      width 226.5px !important
+      height: 140px
+    +above($breakpoints.xxl)
+      gap: 20px
+      padding 20px 5px 20px 20px
+      width 260px !important
+      height: 167px
+
+  &__card-num
+    display: flex
+    justify-content center
+    align-items: center
+    background-color #000
+    border-radius: 50%
+    width 22px
+    height: 22px
+    +above($breakpoints.sm)
+      width 25px
+      height: 25px
+    +above($breakpoints.md)
+      width 28px
+      height: 28px
+    +above($breakpoints.xxl)
+      width 32px
+      height: 32px
+
+  &__img
+    width 160px
+    height: auto
+    margin 0 auto
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      width 326px
+      bottom: 0
+      right: 0
+    +above($breakpoints.md)
+      width 430px
+    +above($breakpoints.xxl)
+      width 560px
+
+.start-card-margin
+  +above($breakpoints.sm)
+    margin-right 310px
+  +above($breakpoints.md)
+    margin-right 310px
+  +above($breakpoints.xxl)
+    margin-right 310px
+.start-card-width
+  +above($breakpoints.sm)
+    width 358px !important
+  +above($breakpoints.md)
+    width 473px !important
+  +above($breakpoints.xxl)
+    width 560px !important

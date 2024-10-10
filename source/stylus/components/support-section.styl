@@ -1,0 +1,54 @@
+.support-section
+  background-image: url('../images/support-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #0F45FF
+
+  &__container
+    position relative
+    text-align: center
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 50px 0 50px 0
+    +above($breakpoints.md)
+      padding 80px 0 80px 0
+    +above($breakpoints.xxl)
+      padding 120px 0 121px 0
+
+  &__sub-title
+    padding 15px 0
+    +above($breakpoints.sm)
+      padding 20px 0
+    +above($breakpoints.md)
+      padding 30px 0
+    +above($breakpoints.xxl)
+      padding 40px 0
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content center
+      gap: 20px
+    +above($breakpoints.md)
+      gap: 30px
+    +above($breakpoints.xxl)
+      gap: 40px
+
+.input-city-position
+  position relative
+  left: -29px;
+  top: -1px;
+.support-item
+  width 280px !important
+  +above($breakpoints.sm)
+    width 340px !important
+  +above($breakpoints.md)
+    width 440px !important
+  +above($breakpoints.xxl)
+    width 560px !important

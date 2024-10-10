@@ -1,0 +1,196 @@
+.input
+  height: 45px
+  width 100%
+  padding: 0 30px;
+  font-family: 'Commissioner-Regular'
+  font-weight: 400
+  font-size: 14px;
+  line-height: 120%
+  color: #23232350
+  border: 1px solid #222222
+  border-radius: 100px;
+  background: transparent
+  position relative
+  overflow hidden
+
+  &.active
+    .input__progress
+      opacity 1
+      min-width: 40px
+      span
+        opacity 1
+  &__progress
+    position: absolute
+    height: 100%
+    top: 0
+    left: 0
+    background: #000
+    opacity 0
+    min-width: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 16px
+    line-height: 16px
+    transition: min-width 1s, opacity 0.8s
+    color: #fff
+    font-weight: bold
+    border-radius: 100px
+    +above($breakpoints.xxl)
+      font-size: 20px
+      line-height: 20px
+    span
+      opacity 0
+      transition: 2s
+
+  transition border-color 0.3s, box-shadow 0.3s, border 0.3s, background 0.3s
+  &:hover
+    border 1px solid #996E46
+  &:focus
+    color: #3D261B
+    caret-color: #95757C
+    border 1px solid #996E46
+    box-shadow: 3px 3px 20px 0px #996E46
+    background: transparent
+    &::placeholder
+      color: #23232350
+  &::placeholder
+    color: #23232350
+  +above($breakpoints.sm)
+    height: 50px
+    font-size: 14px;
+  +above($breakpoints.md)
+    height: 55px
+    font-size: 16px;
+  +above($breakpoints.xxl)
+    font-size: 18px;
+    height: 60px
+  &.error
+    border 1px solid $color-error
+    color: $color-error
+    caret-color: $color-error
+    box-shadow: 0px 0px 22px 0px $color-error
+    background: #fff
+    &::placeholder
+      color: $color-error
+    &::-ms-input-placeholder
+      color: $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+  // &--textarea
+  //   outline none
+  //   border: none
+  //   padding: 15px 10px 10px 20px
+  //   resize: none
+  //   height: 60px
+  //   width 280px
+  //   border-radius: 6px
+  //   +above($breakpoints.sm)
+  //     height: 70px;
+  //     width: 367px;
+  //   +above($breakpoints.md)
+  //     height: 90px;
+  //     width: 410px;
+  //   +above($breakpoints.xxl)
+  //     padding: 18px 10px 10px 28px
+  //     height: 112px
+  //     width 470px
+
+  &--main
+      border: 1px solid #fff
+      color: #ffffff50
+      &:hover
+        border 1px solid #996E46
+      &:focus
+        color: #fff
+        caret-color: #95757C
+        border 1px solid #996E46
+        box-shadow: 3px 3px 20px 0px #996E46
+        background: transparent
+        &::placeholder
+          color: #ffffff50
+      &::placeholder
+        color: #ffffff50
+
+  &--secondary
+    padding: 0 28px;
+
+  &--city
+    padding: 0 28px;
+    &:hover
+      border 1px solid #fff
+    &:focus
+      color: #fff
+      caret-color: #fff
+      border 1px solid #fff
+      box-shadow: 3px 3px 20px 0px #fff
+      background: transparent
+      &::placeholder
+        color: #fff
+    &::placeholder
+      color: #fff
+
+  &--invest
+    padding: 0 28px;
+    color: #878787
+    border: 1px solid #878787
+    padding: 0 28px;
+    &:hover
+      border 1px solid #0F45FF
+    &:focus
+      color: #000
+      caret-color: #000
+      border 1px solid #0F45FF
+      box-shadow: 3px 3px 20px 0px #0F45FF
+      background: transparent
+      &::placeholder
+        color: #878787
+    &::placeholder
+      color: #878787
+
+  &--city-section
+    padding: 0 28px;
+    color: #424241
+    border: 1px solid #000
+    padding: 0 28px;
+    &:hover
+      border 1px solid #0F45FF
+    &:focus
+      color: #000
+      caret-color: #000
+      border 1px solid #0F45FF
+      box-shadow: 3px 3px 20px 0px #0F45FF
+      background: transparent
+      &::placeholder
+        color: #424241
+    &::placeholder
+      color: #424241
+
+
+  // &--tertiary
+  //   background-color #fff
+
+  // &--modal
+  //   color: #fff
+  //   border: 1px solid #fff
+  //   &:hover
+  //     border 2px solid #91B77C
+  //   &:focus
+  //     color: #fff
+  //     caret-color: #fff
+  //     border 2px solid #91B77C
+  //     box-shadow: 3px 3px 20px 0px #91B77C
+  //     background: transparent
+  //     &::placeholder
+  //       color: #fff
+  //   &::placeholder
+  //     color: #fff

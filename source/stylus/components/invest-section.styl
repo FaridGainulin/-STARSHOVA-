@@ -1,0 +1,102 @@
+.invest-section
+  // background-image: url('../images/invest-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    text-align: center
+    padding 20px 0 1px 0
+    +above($breakpoints.sm)
+      padding 60px 0 60px 0
+    +above($breakpoints.md)
+      padding 90px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 114px 0
+
+  &__title
+    padding 0 0 15px 0
+    +above($breakpoints.sm)
+      padding 0 0 30px 0
+    +above($breakpoints.md)
+      padding 0 0 50px 0
+    +above($breakpoints.xxl)
+      padding 0 0 70px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    width 300px !important
+    background-color #F1F1F1
+    padding 15px 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    +above($breakpoints.sm)
+      padding 20px 10px 25px 10px
+      width 235px !important
+    +above($breakpoints.md)
+      padding 30px 10px 35px 10px
+      width 308px !important
+    +above($breakpoints.xxl)
+      width 380px !important
+      padding 36px 10px 40px 10px
+      height: 410px
+
+  &__card-title
+    display: flex
+    justify-content center
+    align-items: center
+    border-radius: 25px
+    border: 1px solid #996E46
+    color: #996E46
+    width 210px
+    height: 35px
+    margin 10px 0 10px 0
+    +above($breakpoints.sm)
+      width 200px
+      height: 40px
+      margin 15px 0 15px 0
+    +above($breakpoints.md)
+      width 260px
+      height: 45px
+      margin 20px 0 20px 0
+    +above($breakpoints.xxl)
+      margin 20px 0 26px 0
+      width 280px
+      height: 50px
+
+  &__card-text
+    padding 10px 0
+    color: #686868
+    +above($breakpoints.sm)
+      padding 20px 0 15px 0
+    +above($breakpoints.md)
+      padding 30px 0 20px 0
+    +above($breakpoints.xxl)
+      padding 40px 0 30px 0
+
+  &__btn
+    width 240px !important
+    +above($breakpoints.sm)
+      width 200px !important
+    +above($breakpoints.md)
+      width 260px !important
+    +above($breakpoints.xxl)
+      width 280px !important
+
+.invest-card-title
+  +above($breakpoints.sm)
+    width 210px
+  +above($breakpoints.md)
+    width 275px
+  +above($breakpoints.xxl)
+    width 330px

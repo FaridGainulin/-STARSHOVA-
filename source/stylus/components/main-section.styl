@@ -1,0 +1,96 @@
+.main-section
+  background-color #1F0E02
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    position relative
+    z-index 1
+    padding 15px 0 20px 0
+    text-align: center
+    color #fff
+    +above($breakpoints.sm)
+      text-align: start
+      padding 15px 0 70px 0
+    +above($breakpoints.md)
+      padding 20px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 22px 0 138px 0
+
+  &__sub-title
+    padding 20px 0 15px 0
+    +above($breakpoints.sm)
+      padding 70px 0 25px 0
+    +above($breakpoints.md)
+      padding 90px 0 30px 0
+    +above($breakpoints.xxl)
+      padding 121px 0 40px 0
+
+  &__title-position
+    +above($breakpoints.sm)
+      padding-left 160px
+    +above($breakpoints.md)
+      padding-left 214px
+    +above($breakpoints.xxl)
+      padding-left 282px
+
+  &__text
+    padding 15px 0
+    +above($breakpoints.sm)
+      padding 25px 0
+    +above($breakpoints.md)
+      padding 30px 0
+    +above($breakpoints.xxl)
+      padding 39px 0
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      width 460px
+      flex-direction: row
+      flex-wrap: wrap
+      gap: 8px
+    +above($breakpoints.md)
+      gap: 12px
+    +above($breakpoints.xxl)
+      gap: 16px
+    input
+      width 280px !important
+      +above($breakpoints.sm)
+        width 200px !important
+      +above($breakpoints.md)
+        width 210px !important
+      +above($breakpoints.xxl)
+        width 220px !important
+    button
+      width 280px !important
+      +above($breakpoints.sm)
+        width 408px !important
+      +above($breakpoints.md)
+        width 432px !important
+      +above($breakpoints.xxl)
+        width 456px !important
+
+  &__img
+    width 280px
+    height: auto
+    margin 15px auto 0
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      z-index -1
+      width 300px
+      right: 0
+      bottom: 70px
+    +above($breakpoints.md)
+      width 380px
+      bottom: 90px
+    +above($breakpoints.xxl)
+      width 480px
+      bottom: 138px

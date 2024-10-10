@@ -1,0 +1,29 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      .main-section__sub-title.font-w-t-regular.font-s-30
+        | Зарабатывайте 
+        br.no-br
+        | от 330 000 
+        span.font-w-m-regular ₽  
+        | в месяц
+      h1.main-section__title.font-w-t-regular.font-s-54.text-up
+        | на продаже 
+        br.no-br
+        | эксклюзивных 
+        br.no-br
+        | украшений, бижутерии 
+        br.no-br
+        span.main-section__title-position и аксессуаров
+      .main-section__text.font-s-20
+        | Получите пошаговый план запуска 
+        br.no-br
+        | прибыльного бизнеса в вашем городе 
+        br.no-br
+        | по франшизе «STARSHOVA»
+      form.main-section__form(data-feedback-form)
+        input.input.input--main(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.input--main(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Получить план запуска
+      img.main-section__img(src="images/main-section-img.jpg" loading="lazy" width="960" height="1470" alt="image")

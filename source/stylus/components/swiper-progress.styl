@@ -1,0 +1,170 @@
+.swiper-progress-finances
+  position relative !important
+  height: 6px !important
+  overflow: hidden
+  background: #d7d7d7
+  margin: 14px 0 20px 0
+  border-radius: 10px !important
+  +above($breakpoints.sm)
+    display: none
+  .swiper-pagination-progressbar-fill
+    border-radius: 10px !important
+    background: #996E46
+
+.swiper-progress-invest
+  position relative !important
+  height: 6px !important
+  overflow: hidden
+  background: #d7d7d7
+  margin: 14px 0 20px 0
+  border-radius: 10px !important
+  +above($breakpoints.sm)
+    display: none
+  .swiper-pagination-progressbar-fill
+    border-radius: 10px !important
+    background: #996E46
+
+.swiper-progress-steps
+  position relative !important
+  height: 6px !important
+  overflow: hidden
+  background: #d7d7d7
+  margin: 14px 0 20px 0
+  border-radius: 10px !important
+  +above($breakpoints.sm)
+    display: none
+  .swiper-pagination-progressbar-fill
+    border-radius: 10px !important
+    background: #996E46
+
+/////////////////////////////////////////////////
+////////////////////////////////////////////////
+//////////////////////////////////////////////
+
+.desktop-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  gap: 0px
+  margin-top 10px
+  +above($breakpoints.sm)
+    display: none
+    margin-top 20px
+    gap: 10px
+  +above($breakpoints.md)
+    margin-top 35px
+    gap: 12px
+  +above($breakpoints.xxl)
+    gap: 16px
+    margin-top 40px
+.swiper-pagination-bullet
+  background-color #F8F5F2
+  border 1px solid #AFAFAF
+  width: 7px
+  height: 7px
+  border-radius: 50%
+  opacity: 1
+  +above($breakpoints.sm)
+    width: 8px
+    height: 8px
+  +above($breakpoints.md)
+    width: 9px
+    height: 9px
+  +above($breakpoints.xxl)
+    width: 10px
+    height: 10px
+.swiper-pagination-bullet-active
+  background-color: #996E46
+
+// .swiper-progress-desktop
+//   position relative !important
+//   height: 6px !important
+//   overflow: hidden
+//   background: #F4EEE9
+//   margin: 14px 0 0 0
+//   border-radius: 10px !important
+//   +above($breakpoints.sm)
+//     display: none
+//   .swiper-pagination-progressbar-fill
+//     border-radius: 10px !important
+//     background: #6D58B7
+
+.swiper-buttons
+  display: none
+  +above($breakpoints.sm)
+    position: absolute
+    display: flex
+    align-items: center
+    gap: 10px
+    z-index 1
+    left: 0
+    bottom: 40px
+  +above($breakpoints.md)
+    gap: 15px
+    bottom: 70px
+  +above($breakpoints.xxl)
+    bottom: 90px
+    gap: 20px
+.button-next,
+.button-prev
+  position relative
+  transition transform 0.5s, top 0.8s
+  border-radius: 20px
+  &:hover
+    transform: scale(1.1)
+  &:active
+    top: 3px
+
+  img
+    width 60px
+    height: 22px
+    background-color #FEFEFE
+    border-radius: 20px
+    +above($breakpoints.md)
+      width 70px
+      height: 26px
+    +above($breakpoints.xxl)
+      width 80px
+      height: 30px
+
+.swiper-buttons-presentation
+  display: none
+  +above($breakpoints.sm)
+    position: absolute
+    display: flex
+    align-items: center
+    gap: 10px
+    z-index 1
+    left: 0
+    bottom: 60px
+  +above($breakpoints.md)
+    gap: 15px
+    bottom: 80px
+  +above($breakpoints.xxl)
+    bottom: 111px
+    gap: 20px
+  img
+    background-color #F1F1F1
+
+// .button-next
+//   +above($breakpoints.sm)
+//     top: 252px
+//     right: -55px
+//   +above($breakpoints.md)
+//     top: 325px
+//     right: -70px
+//   +above($breakpoints.xxl)
+//     top: 415px
+//     right: -107px
+
+// .button-prev
+//   +above($breakpoints.sm)
+//     transform: rotateY(180deg)
+//     top: 252px;
+//     left: -55px;
+//   +above($breakpoints.md)
+//     top: 325px;
+//     left: -70px;
+//   +above($breakpoints.xxl)
+//     top: 415px;
+//     left: -107px;
