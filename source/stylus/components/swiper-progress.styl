@@ -105,27 +105,48 @@
   +above($breakpoints.xxl)
     bottom: 90px
     gap: 20px
+  button
+    svg
+      fill: #9D9D9D
+    &:hover
+      svg
+        fill: #fff
+.button-next
+  svg
+    transform: rotateY(180deg)
+.button-next
+  +above($breakpoints.xxl)
+    padding-left 20px
+.button-prev
+  +above($breakpoints.xxl)
+    padding-right 20px
 .button-next,
 .button-prev
   position relative
-  transition transform 0.5s, top 0.8s
+  transition transform 0.5s, top 0.8s, background 0.5s
   border-radius: 20px
+  display: flex
+  justify-content center
+  align-items: center
+  width 60px
+  height: 22px
+  background-color #f4f4f4
+  border: 1px solid #9D9D9D
+  border-radius: 20px
+  +above($breakpoints.md)
+    width 70px
+    height: 26px
+  +above($breakpoints.xxl)
+    width 80px
+    height: 30px
+
   &:hover
     transform: scale(1.1)
+    background-color #996E46
+    border: 1px solid #996E46
   &:active
     top: 3px
 
-  img
-    width 60px
-    height: 22px
-    background-color #FEFEFE
-    border-radius: 20px
-    +above($breakpoints.md)
-      width 70px
-      height: 26px
-    +above($breakpoints.xxl)
-      width 80px
-      height: 30px
 
 .swiper-buttons-presentation
   display: none
@@ -143,9 +164,22 @@
   +above($breakpoints.xxl)
     bottom: 111px
     gap: 20px
-  img
-    background-color #F1F1F1
-
+  button
+    svg
+      fill: #9D9D9D
+    &:hover
+      svg
+        fill: #fff
+.swiper-buttons
+  .button-next,
+  .button-prev
+    background-color #fefefe
+    &:hover
+      transform: scale(1.1)
+      background-color #996E46
+      border: 1px solid #996E46
+    &:active
+      top: 3px
 // .button-next
 //   +above($breakpoints.sm)
 //     top: 252px
