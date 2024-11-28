@@ -73,6 +73,13 @@ section.about-section
           | сформировать популярный ассортимент, и как стать брендом №1 в вашем 
           br.no-br-md
           | городе.
+      .about-section__block-video
+        video(id="myVideo" poster="images/about-section-poster.jpg" preload="auto" width="100%" height="auto")
+          source(src="images/about-section-video.mp4" type="video/mp4")
+          source(src="images/about-section-video.webm" type="video/webm")
+          | Упс... Не удалось загрузить видео.
+          br
+          a(href="https://www.whatismybrowser.com/" target="_blank") Узнайте больше о вашем браузере.
       .about-section__bottom
         .font-w-t-regular.font-s-32.text-up
           | Будем рады 

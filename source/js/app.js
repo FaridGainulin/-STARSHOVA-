@@ -62,3 +62,15 @@ cards.forEach(card => {
     input.value = card.dataset.quantity;
   });
 });
+
+
+
+const video = document.getElementById('myVideo');
+
+video.addEventListener('click', () => {
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+});
