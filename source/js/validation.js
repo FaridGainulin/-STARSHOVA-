@@ -1,19 +1,23 @@
 $.validator.addMethod(
+  'customName',
+  function (value) {
+    return /^[a-zA-Zа-яА-ЯёЁ\s'-]+$/.test(value);
+  },
+);
+
+$.validator.addMethod(
   'email',
   function (value) {
-    return value.match(/^[a-zA-Z0-9_\.%\+\-]+@[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,}$/)
+    return /^[a-zA-Z0-9_.%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/.test(value);
   },
-  '',
-)
+);
 
 $.validator.addMethod(
   'phone',
   function (value) {
-    return value.match(/\+\d{1} \([9]\d\d\) \d{3} \d{4}/g)
-    // return value.match(/\+\d{1} \(7([0-6][0-9]|7[0-7])\) \d{3} \d{4}/g)
+    return /\+\d{1} \([9]\d{2}\) \d{3} \d{4}/.test(value) && !/(\d)\1{4,}/.test(value.replace(/[^\d]/g, ''));
   },
-  '',
-)
+);
 
 $('form').each(function () {
   $(this).validate({
@@ -21,6 +25,7 @@ $('form').each(function () {
     rules: {
       name: {
         required: true,
+        customName: true,
       },
       city: {
         required: true,
@@ -32,13 +37,13 @@ $('form').each(function () {
         required: true,
       },
       email: {
-        email: true,
         required: true,
+        email: true,
       },
       phone: {
-        phone: true,
         required: true,
+        phone: true,
       },
     },
-  })
-})
+  });
+});

@@ -16,16 +16,6 @@ function setInitialFeedbackStore() {
     utm_region_name: $.query.get('utm_region_name') || '',
     yclid: $.query.get('yclid') || '',
   }
-
-  ymaps.ready(function () {
-    ymaps.geolocation
-      .get({ provider: 'yandex', autoReverseGeocode: true })
-      .then(function (result) {
-        $.feedback_store.city =
-          result.geoObjects.get(0).properties.get('metaDataProperty')
-            .GeocoderMetaData.Address.formatted || ''
-      })
-  })
 }
 
 function createFormData(data) {
@@ -45,6 +35,12 @@ function initFeedbackForm() {
 
   $forms.on('submit', function (event) {
     event.preventDefault()
+
+    // Проверка на заполнение honeypot-поля
+    if ($(this).find('.honeypot').val() !== '') {
+      event.preventDefault();
+      alert('Отправка заблокирована.');
+    }
 
     if ($(this).valid()) {
       var fields = $(this)

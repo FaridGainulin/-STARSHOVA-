@@ -28,30 +28,13 @@
     +above($breakpoints.xxl)
       width 188px
 
-  // &__privacy
-  //   cursor pointer
-  //   text-decoration: underline
-
-  &__connection
-    display: flex
-    align-items: center
-    gap: 5px
+  &__privacy
+    cursor pointer
+    text-decoration: underline
     +above($breakpoints.sm)
-      gap: 8px
-    +above($breakpoints.md)
-      gap: 9px
-    +above($breakpoints.xxl)
-      gap: 10px
+      display: none
 
-  &__connection-icon
-    width 12px
-    height: 12px
+  &__brand
+    display: none
     +above($breakpoints.sm)
-      width 13px
-      height: 13px
-    +above($breakpoints.md)
-      width 14px
-      height: 14px
-    +above($breakpoints.xxl)
-      width 16px
-      height: 16px
+      display: block

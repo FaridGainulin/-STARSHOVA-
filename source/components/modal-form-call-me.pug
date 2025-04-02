@@ -9,15 +9,15 @@
           .form-modal__feedback-container
             .form-modal__feedback-input.form-modal__feedback-item
               .input-white
-                input.input.form-modal__feedback-input(type="text" name="name" placeholder="Ваше имя")
+                input.input.form-modal__feedback-input(type="text" name="name" placeholder="Имя")
             .form-modal__feedback-input.form-modal__feedback-item
               .input-white
-                input.input.form-modal__feedback-input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+                input.input.form-modal__feedback-input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
             .form-modal__button.form-modal__feedback-item
               button.btn(type="submit")
                 span Обратный звонок
             .form-modal__agree.form-modal__feedback-item
               .form-modal__agree-text
-                //- include ../components/agree.pug
                 |Нажимая на кнопку «обратный звонок», я&nbsp;даю&nbsp;согласие на&nbsp;обработку персональных данных и&nbsp;соглашаюсь с&nbsp;
                 a(href="#" data-remodal-target="privacy").agree-link политикой конфиденциальности
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")

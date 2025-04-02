@@ -1,0 +1,56 @@
+section.calculation-section
+  .wrapper
+    .calculation-section__container
+      h2.calculation-section__title.font-w-t-regular.font-s-54.text-up.text-center
+        | Сколько зарабатывают
+        br
+        | партнеры франшизы
+      .calculation-section__sub-title.font-s-20.color-beige Выберите формат:
+      .calculation-section__custom-select.custom-select
+        #select-header.calculation-section__select-header
+          span#selected-option.font-w-regular.font-s-24-a Выберите формат:
+          .calculation-section__icon-wrapper
+            img.calculation-section__select-icon(src="images/select-icon.svg" loading="lazy" width="42" height="25" alt="icon")
+        ul#select-options.calculation-section__select-options
+          li.font-w-regular.font-s-24-a(data-value="290000") Остров в ТЦ
+          li.font-w-regular.font-s-24-a(data-value="330000") Магазин в ТЦ
+          li.font-w-regular.font-s-24-a(data-value="350000") Отдельный магазин
+      .calculation-section__text.font-w-regular.font-s-20.text-center Перетащите бегунок и узнайте, какой будет прибыль в течении двух лет
+      .calculation-section__block-range-wrapper
+        .calculation-section__block-range
+          .calculation-section__custom-range
+            .custom-range__track.calculation-section__custom-range-track
+              .custom-range__progress.calculation-section__custom-range-progress
+              .custom-range__thumb.calculation-section__custom-range-thumb
+          .calculation-section__months.font-s-20-b
+            .calculation-section__month
+              .calculation-section__month-dot.month-dot
+              span 3
+            .calculation-section__month
+              .calculation-section__month-dot.month-dot
+              span 6
+            .calculation-section__month
+              .calculation-section__month-dot.month-dot
+              span 9
+            .calculation-section__month
+              .calculation-section__month-dot.month-dot
+              span 12
+            .calculation-section__month
+              .calculation-section__month-dot.month-dot
+              span 15
+            .calculation-section__month
+              .calculation-section__month-dot.month-dot
+              span 18
+            .calculation-section__month
+              .calculation-section__month-dot.month-dot
+              span 21
+            .calculation-section__month
+              .calculation-section__month-dot.month-dot
+              span 24
+      .calculation-section__block-result
+        .calculation-section__block-result-text
+          span.font-w-t-regular.font-s-40.text-up Результат: 
+          span.font-w-italic.font-s-24-a (прибыль *кол-во месяцев)
+        .calculation-section__block-result-total.font-w-t-regular.font-s-40
+          span#result 0
+          span.font-w-m-regular  ₽
